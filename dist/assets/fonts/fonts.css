@@ -1,0 +1,11 @@
+@font-face {
+    font-family: ghasedak;
+    src: url('./ghas.ttf');
+}
+
+@font-face {
+    font-family: leila;
+    src: url('./Leila.ttf');
+    font-weight: bolder;
+}
+
