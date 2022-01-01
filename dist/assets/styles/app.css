@@ -185,6 +185,8 @@ main {
   /* end style awards */
   /* start style blog */
   /* end style blog */
+  /* start style follow */
+  /* end style follow */
 }
 main .about-me {
   padding: 8rem 0 6rem 0;
@@ -515,6 +517,47 @@ main .blog .container .btns span {
   color: #c18f59;
   border-radius: 50%;
 }
+main .follow {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(rgba(193, 143, 89, 0.9), rgba(193, 143, 89, 0.6));
+}
+main .follow .container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 0;
+}
+main .follow .container .right {
+  font-size: 1.4em;
+}
+main .follow .container .center {
+  display: flex;
+  justify-content: space-between;
+}
+main .follow .container .center a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin: 0 1rem;
+  transition: all 500ms;
+}
+main .follow .container .center a i {
+  color: #fff;
+  font-size: 0.8em;
+}
+main .follow .container .center a:hover {
+  border: 2px solid #aaa;
+  background-color: #aaa;
+}
+main .follow .container .left {
+  font-size: 1.4em;
+}
 
 /* end style main */
 @media (max-width: 992px) {
@@ -702,6 +745,8 @@ main .blog .container .btns span {
     /* end style awards */
     /* start style blog */
     /* end style blog */
+    /* start style follow */
+    /* end style follow */
   }
   main .about-me {
     height: 100vh;
@@ -838,6 +883,25 @@ main .blog .container .btns span {
   main .blog .container .slides-blog .slide.active .item {
     width: 100%;
     margin-bottom: 1rem;
+  }
+  main .follow .container {
+    display: flex;
+    flex-direction: column;
+  }
+  main .follow .container .right {
+    width: 100%;
+    margin: 2rem 0;
+    text-align: center;
+  }
+  main .follow .container .center {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  main .follow .container .left {
+    width: 100%;
+    margin: 2rem 0;
+    text-align: center;
   }
 }
 @media (max-width: 380px) {
