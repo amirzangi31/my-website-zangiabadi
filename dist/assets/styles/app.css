@@ -178,6 +178,8 @@ header .hamburger-page .list .item .link-item:hover {
 main {
   /* start style about-me */
   /* end style about-me */
+  /* start style works */
+  /* end style works */
 }
 main .about-me {
   padding: 8rem 0 6rem 0;
@@ -274,6 +276,118 @@ main .about-me .about-me-title .about-me-title-text {
   margin: 3rem;
   color: #222;
 }
+main .works {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+main .works .container {
+  width: 90%;
+}
+main .works .container .title {
+  text-align: center;
+}
+main .works .container .title .title-works {
+  word-spacing: 10px;
+  font-weight: bolder;
+  font-size: 2em;
+  color: #222;
+}
+main .works .container .title .divider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+main .works .container .title .divider span {
+  margin: 0.2rem;
+  display: inline-block;
+  width: 50px;
+  height: 1.5px;
+  background-color: #c18f59;
+}
+main .works .container .title .divider .one {
+  margin-right: 30px;
+}
+main .works .container .title .divider .two {
+  margin-left: 30px;
+}
+main .works .container .list-works {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+main .works .container .list-works .item-works {
+  width: 25%;
+  margin: 0 1rem;
+}
+main .works .container .list-works .item-works:first-child {
+  margin-right: 0;
+}
+main .works .container .list-works .item-works:last-child {
+  margin-left: 0;
+}
+main .works .container .list-works .item-works .image {
+  width: 100%;
+  position: relative;
+}
+main .works .container .list-works .item-works .image:hover .overlay {
+  opacity: 1;
+  width: 100%;
+  height: 96%;
+  top: 0%;
+  left: 0%;
+}
+main .works .container .list-works .item-works .image .overlay {
+  width: 0%;
+  height: 0%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: all 1s;
+}
+main .works .container .list-works .item-works .image .overlay i {
+  cursor: pointer;
+}
+main .works .container .list-works .item-works .image img {
+  width: 100%;
+}
+main .works .container .list-works .item-works .title-item {
+  margin: 1rem 0;
+  text-align: center;
+  color: #222;
+}
+main .works .container .list-works .item-works .job {
+  margin: 1rem 0;
+  text-align: center;
+  color: #c18f59;
+}
+main .works .container .btn {
+  text-align: center;
+}
+main .works .container .btn button {
+  padding: 0 1rem;
+  border: 1px solid #c18f59;
+  color: #c18f59;
+  font-size: 1em;
+  font-family: ghasedak;
+  font-weight: bold;
+  word-spacing: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 1s;
+}
+main .works .container .btn button:hover {
+  color: #222;
+  border: 1px solid #222;
+}
 
 /* end style main */
 @media (max-width: 992px) {
@@ -291,6 +405,8 @@ main .about-me .about-me-title .about-me-title-text {
   main {
     /* start style about-me */
     /* end style about-me */
+    /* start style works */
+    /* end style works */
   }
   main .about-me {
     height: 100vh;
@@ -391,6 +507,14 @@ main .about-me .about-me-title .about-me-title-text {
     text-align: center;
     color: #222;
   }
+  main .works .container .list-works {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  main .works .container .list-works .item-works {
+    width: 45%;
+  }
 }
 @media (max-width: 500px) {
   header .container .head {
@@ -434,6 +558,8 @@ main .about-me .about-me-title .about-me-title-text {
   main {
     /* start style about-me */
     /* end style about-me */
+    /* start style works */
+    /* end style works */
   }
   main .about-me {
     height: 100vh;
@@ -539,6 +665,15 @@ main .about-me .about-me-title .about-me-title-text {
     text-align: center;
     font-size: 0.8em;
     color: #222;
+  }
+  main .works .container .list-works {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  main .works .container .list-works .item-works {
+    width: 80%;
+    margin: 0;
   }
 }
 @media (max-width: 380px) {
