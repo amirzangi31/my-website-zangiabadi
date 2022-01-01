@@ -173,7 +173,110 @@ header .hamburger-page .list .item .link-item:hover {
   color: #aaa;
 }
 
-@media (max-width: 900px) {
+/*end style header*/
+/* start style main */
+main {
+  /* start style about-me */
+  /* end style about-me */
+}
+main .about-me {
+  padding: 8rem 0 6rem 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+main .about-me .bg-about-me {
+  width: 70%;
+  height: 110vh;
+  padding: 8% 13%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/about-me-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+main .about-me .bg-about-me .slide-about-me .title-about-me-slide {
+  text-align: center;
+  margin: 1rem;
+}
+main .about-me .bg-about-me .slide-about-me .divider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+main .about-me .bg-about-me .slide-about-me .divider span {
+  margin: 0.2rem;
+  display: inline-block;
+  width: 50px;
+  height: 1.5px;
+  background-color: #c18f59;
+}
+main .about-me .bg-about-me .slide-about-me .divider .one {
+  margin-right: 30px;
+}
+main .about-me .bg-about-me .slide-about-me .divider .two {
+  margin-left: 30px;
+}
+main .about-me .bg-about-me .slide-about-me .about-me-text-slide {
+  color: #c18f59;
+  text-align: center;
+  margin: 3rem 0;
+}
+main .about-me .bg-about-me .slide-about-me .another {
+  color: #c18f59;
+  font-size: 1.2em;
+  text-align: center;
+}
+main .about-me .bg-about-me #slide-1 {
+  display: none;
+}
+main .about-me .bg-about-me .btns {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .about-me .bg-about-me .btns span {
+  margin: 0 0.3rem;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #c18f59;
+  color: #c18f59;
+  border-radius: 50%;
+}
+main .about-me .about-me-title {
+  position: absolute;
+  left: 10%;
+  top: 21%;
+  width: 30%;
+  height: 90vh;
+  margin-left: 0;
+  border: 8px solid #fff;
+  background-color: #e9e6e6;
+}
+main .about-me .about-me-title img {
+  width: 100%;
+}
+main .about-me .about-me-title .title {
+  text-align: center;
+  margin: 2.8rem;
+  color: #c18f59;
+}
+main .about-me .about-me-title .title .br {
+  display: none;
+}
+main .about-me .about-me-title .about-me-title-text {
+  text-align: center;
+  margin: 3rem;
+  color: #222;
+}
+
+/* end style main */
+@media (max-width: 992px) {
   header .container .head .title-header {
     padding: 3em 1em;
   }
@@ -183,6 +286,110 @@ header .hamburger-page .list .item .link-item:hover {
   }
   header .container .head .title-header .title-five {
     text-align: center;
+  }
+
+  main {
+    /* start style about-me */
+    /* end style about-me */
+  }
+  main .about-me {
+    height: 100vh;
+    margin: 2em 0;
+    padding: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/about-me-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  main .about-me .bg-about-me {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 100%;
+    height: 28vh;
+    padding: 0 1rem;
+    background: none;
+    color: white;
+  }
+  main .about-me .bg-about-me .slide-about-me {
+    width: 100;
+    height: 100%;
+  }
+  main .about-me .bg-about-me .slide-about-me .title-about-me-slide {
+    text-align: center;
+    margin: 0.5rem;
+  }
+  main .about-me .bg-about-me .slide-about-me .divider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  main .about-me .bg-about-me .slide-about-me .divider span {
+    margin: 0.2rem;
+    display: inline-block;
+    width: 50px;
+    height: 1.5px;
+    background-color: #c18f59;
+  }
+  main .about-me .bg-about-me .slide-about-me .divider .one {
+    margin-right: 30px;
+  }
+  main .about-me .bg-about-me .slide-about-me .divider .two {
+    margin-left: 30px;
+  }
+  main .about-me .bg-about-me .slide-about-me .about-me-text-slide {
+    width: 100%;
+    color: #c18f59;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  main .about-me .bg-about-me .slide-about-me .another {
+    color: #c18f59;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  main .about-me .bg-about-me #slide-1 {
+    display: none;
+  }
+  main .about-me .bg-about-me .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .about-me .bg-about-me .btns span {
+    margin: 0 0.3rem;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #c18f59;
+    color: #c18f59;
+    border-radius: 50%;
+  }
+  main .about-me .about-me-title {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: auto;
+    margin-left: 0;
+    border: 8px solid #fff;
+    background-color: #e9e6e6;
+  }
+  main .about-me .about-me-title img {
+    width: 100%;
+  }
+  main .about-me .about-me-title .title {
+    text-align: center;
+    color: #c18f59;
+  }
+  main .about-me .about-me-title .about-me-title-text {
+    text-align: center;
+    color: #222;
   }
 }
 @media (max-width: 500px) {
@@ -223,15 +430,237 @@ header .hamburger-page .list .item .link-item:hover {
   header .container .head .banner-header {
     display: none;
   }
+
+  main {
+    /* start style about-me */
+    /* end style about-me */
+  }
+  main .about-me {
+    height: 100vh;
+    margin: 2em 0;
+    padding: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/about-me-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  main .about-me .bg-about-me {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    padding: 0;
+    background: none;
+    color: white;
+  }
+  main .about-me .bg-about-me .slide-about-me {
+    width: 100;
+    height: 100%;
+  }
+  main .about-me .bg-about-me .slide-about-me .title-about-me-slide {
+    text-align: center;
+    margin: 0.5rem;
+  }
+  main .about-me .bg-about-me .slide-about-me .divider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  main .about-me .bg-about-me .slide-about-me .divider span {
+    margin: 0.2rem;
+    display: inline-block;
+    width: 50px;
+    height: 1.5px;
+    background-color: #c18f59;
+  }
+  main .about-me .bg-about-me .slide-about-me .divider .one {
+    margin-right: 30px;
+  }
+  main .about-me .bg-about-me .slide-about-me .divider .two {
+    margin-left: 30px;
+  }
+  main .about-me .bg-about-me .slide-about-me .about-me-text-slide {
+    width: 100%;
+    color: #c18f59;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  main .about-me .bg-about-me .slide-about-me .another {
+    color: #c18f59;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  main .about-me .bg-about-me #slide-1 {
+    display: none;
+  }
+  main .about-me .bg-about-me .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .about-me .bg-about-me .btns span {
+    margin: 0 0.3rem;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #c18f59;
+    color: #c18f59;
+    border-radius: 50%;
+  }
+  main .about-me .about-me-title {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 35vh;
+    margin-left: 0;
+    border: 8px solid #fff;
+    background-color: #e9e6e6;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  main .about-me .about-me-title img {
+    width: 100%;
+  }
+  main .about-me .about-me-title .title {
+    text-align: center;
+    color: #c18f59;
+    margin: 1rem 0;
+  }
+  main .about-me .about-me-title .about-me-title-text {
+    margin: 0 0 1rem 0;
+    text-align: center;
+    font-size: 0.8em;
+    color: #222;
+  }
 }
-@media (max-width: 350px) {
+@media (max-width: 380px) {
   header .hamburger-page .list {
     padding: 0.5rem 1rem;
   }
   header .hamburger-page .list .item .link-item {
     font-size: 1.5em;
   }
+
+  main {
+    /* start style about-me */
+    /* end style about-me */
+  }
+  main .about-me {
+    height: 200vh;
+    margin: 2em 0;
+    padding: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/about-me-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  main .about-me .bg-about-me {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    padding: 0;
+    background: none;
+    color: white;
+  }
+  main .about-me .bg-about-me .slide-about-me {
+    width: 100;
+    height: 100%;
+  }
+  main .about-me .bg-about-me .slide-about-me .title-about-me-slide {
+    text-align: center;
+    margin: 0.5rem;
+  }
+  main .about-me .bg-about-me .slide-about-me .divider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  main .about-me .bg-about-me .slide-about-me .divider span {
+    margin: 0.2rem;
+    display: inline-block;
+    width: 50px;
+    height: 1.5px;
+    background-color: #c18f59;
+  }
+  main .about-me .bg-about-me .slide-about-me .divider .one {
+    margin-right: 30px;
+  }
+  main .about-me .bg-about-me .slide-about-me .divider .two {
+    margin-left: 30px;
+  }
+  main .about-me .bg-about-me .slide-about-me .about-me-text-slide {
+    width: 100%;
+    color: #c18f59;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  main .about-me .bg-about-me .slide-about-me .another {
+    color: #c18f59;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  main .about-me .bg-about-me #slide-1 {
+    display: none;
+  }
+  main .about-me .bg-about-me .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .about-me .bg-about-me .btns span {
+    margin: 0 0.3rem;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #c18f59;
+    color: #c18f59;
+    border-radius: 50%;
+  }
+  main .about-me .about-me-title {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 70vh;
+    margin-left: 0;
+    border: 8px solid #fff;
+    background-color: #e9e6e6;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  main .about-me .about-me-title img {
+    width: 100%;
+  }
+  main .about-me .about-me-title .title {
+    text-align: center;
+    color: #c18f59;
+    margin: 1rem 0;
+  }
+  main .about-me .about-me-title .title .br {
+    display: block;
+  }
+  main .about-me .about-me-title .about-me-title-text {
+    margin: 0 0 1rem 0;
+    text-align: center;
+    font-size: 0.8em;
+    color: #222;
+  }
 }
-/*end style header*/
 
 /*# sourceMappingURL=app.css.map */
