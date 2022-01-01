@@ -4,7 +4,6 @@ let closePage = document.querySelector(".close");
 let openPage = document.querySelector(".hamburger-menu label");
 let awards = [...document.querySelectorAll(".item-awards .title ")];
 
-
 function setHamburgerPage() {
   closePage.style.display = "flex";
   openPage.style.display = "none";
@@ -30,8 +29,15 @@ function setSlideAboutMe(slide) {
   });
   item.style.display = "block";
 }
+function setSlideBlog(slide) {
+  let itemBlog = document.getElementById(slide);
 
-
+  let slidesBlog = [...document.querySelector(".slides-blog").children];
+  slidesBlog.forEach((element) => {
+    element.className = "slide";
+  });
+  itemBlog.className = "slide active";
+}
 
 setInterval(() => {
   let awardsOne = awards[0].innerHTML;
