@@ -2,6 +2,8 @@ let hamburgerPage = document.querySelector(".hamburger-page");
 let hamburgerPageList = document.querySelector(".hamburger-page .list");
 let closePage = document.querySelector(".close");
 let openPage = document.querySelector(".hamburger-menu label");
+let awards = [...document.querySelectorAll(".item-awards .title ")];
+
 
 function setHamburgerPage() {
   closePage.style.display = "flex";
@@ -28,3 +30,61 @@ function setSlideAboutMe(slide) {
   });
   item.style.display = "block";
 }
+
+
+
+setInterval(() => {
+  let awardsOne = awards[0].innerHTML;
+
+  if (scrollY > 1850) {
+    if (awardsOne == 125) {
+      return;
+    } else {
+      awardsOne++;
+    }
+
+    awards[0].innerHTML = awardsOne;
+  }
+}, 10);
+
+setInterval(() => {
+  let awardsTwo = awards[1].innerHTML;
+
+  if (scrollY > 1850) {
+    if (awardsTwo == 180) {
+      return;
+    } else {
+      awardsTwo++;
+    }
+
+    awards[1].innerHTML = awardsTwo;
+  }
+}, 10);
+
+setInterval(() => {
+  let awardsThree = awards[2].innerHTML;
+
+  if (scrollY > 1850) {
+    if (awardsThree == 90) {
+      return;
+    } else {
+      awardsThree++;
+    }
+
+    awards[2].innerHTML = awardsThree;
+  }
+}, 10);
+
+setInterval(() => {
+  let awardsFour = awards[3].innerHTML;
+
+  if (scrollY > 1850) {
+    if (awardsFour == 165) {
+      return;
+    } else {
+      awardsFour++;
+    }
+
+    awards[3].innerHTML = awardsFour;
+  }
+}, 10);
